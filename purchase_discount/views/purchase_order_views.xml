@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_purchase_discount_order_form" model="ir.ui.view">
+        <field name="name">view.purchase.discount.order.form</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']//tree//field[@name='product_id']" position="before">
+                <field name="avoid_global_discount"/>
+            </xpath>
+
+            <xpath expr="//notebook/page[@name='products']/field[@name='order_line']" position="after">
+                <div class="float-end d-flex gap-1 mb-2 ms-1"
+                     name="bo_button_below_order_lines">
+                    <button string="Discount"
+                            name="action_open_discount_wizard"
+                            type="object"
+                            class="btn btn-secondary"
+                            groups="purchase_discount.group_discount_per_po_line"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
