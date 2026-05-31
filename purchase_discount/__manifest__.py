@@ -1,7 +1,7 @@
 {
     'name': "Purchase Discount",
     'summary': """Apply Global, Fixed Amount and Line Discounts on Purchase Orders""",
-    'description': """Purchase Discount Management for Odoo Purchase Orders'""",
+    'description': """Purchase Discount Management for Odoo Purchase Orders""",
     'version': '17.0.1.0.0',
     'author': 'Ali Mohamed',
     'category': 'Purchase',
