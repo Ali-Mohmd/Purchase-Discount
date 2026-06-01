@@ -16,7 +16,7 @@
                             name="action_open_discount_wizard"
                             type="object"
                             class="btn btn-secondary"
-                            groups="purchase_order_discount.group_discount_per_po_line"/>
+                            groups="purchase_wizard_discount.group_discount_per_po_line"/>
                 </div>
             </xpath>
         </field>
